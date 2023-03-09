@@ -1,0 +1,94 @@
+.slider1{
+padding: 0;
+margin: 20px;
+/* height: 100vh; */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.slider{
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;  
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 300px;
+    display: flex;
+}
+.slides input{
+    display: none;
+
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 800px;
+    height: 300px;
+}
+
+.navegacionmanual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manualbtn{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;    
+    cursor: pointer;
+    transition: 1s;
+}
+.manualbtn:not(:last-child){
+    margin-right: 40px;
+}
+.manualbtn:hover{
+    background: grey;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.navegacionauto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navegacionauto div{
+    border: 2px solid grey;
+    padding: 5 px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navegacionauto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navegacionauto .autobtn1{
+    background: grey;
+}
+#radio2:checked ~ .navegacionauto .autobtn1{
+    background: grey;
+}
+#radio3:checked ~ .navegacionauto .autobtn1{
+    background: grey;
+}
+#radio4:checked ~ .navegacionauto .autobtn1{
+    background: grey;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiolibros</title>
+    <link rel="stylesheet" href="EstiloAudiolibros.css">
+    <link rel="stylesheet" href="EstiloSlides.css">
+    <script src="https://kit.fontawesome.com/ea4c00813e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <section>
+        <a href="#" class="imaaudiolibros">
+           <img src="Imagenes/Audiolibros.png" alt=""> 
+        </a>
+        <a href="#" class="Titulo2"></a>
+        <h1>
+            Audio Libros
+        </h1>
+        </section>
+    </header>
+
+<section class="cuerpo">   
+    <ul class="menu">  
+            <li><a href="meenuu.html">INICIO</a></li>
+            <li><a href="audiolibros.html">AUDIOLIBROS</a></li>
+            <li><a href="podcats.html">PODCASTS</a></li>
+            <li><a href="materailadaptado.html">MATERIAL ADAPTADO </a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="https://servcisosialatedi.blogspot.com/2023/03/servicio-social.html">SERVICIO SOCIAL</a></li>
+    </ul>
+    <div class="slider1">
+        <div class="slider">
+            <div class="slides">
+                <input type= "radio" name="radio-btn" id="radio1">
+                <input type= "radio" name="radio-btn" id="radio2">
+                <input type= "radio" name="radio-btn" id="radio3">
+                <input type= "radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="Imagenes\1d.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\2d.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\3d.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\4d.jpeg" alt="">
+                </div>
+            </div>
+           
+            <div class="navegacionauto">
+                <div class="autobtn1"></div>
+                <div class="autobtn2"></div>
+                <div class="autobtn3"></div>
+                <div class="autobtn4"></div>
+            </div>
+            <div class="navegacionmanual">
+                <label for="radio1" class="manualbtn"></label>
+                <label for="radio2" class="manualbtn"></label>
+                <label for="radio3" class="manualbtn"></label>
+                <label for="radio4" class="manualbtn"></label>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            },5000)
+        </script>
+    </div>
+    <ul class="menuaudiolibros"> 
+                <li><a href="audiolibros/bachos.html"> BACHILLERES</a></li>
+                <li><a href="audiolibros/psi.html">FACULTAD DE PSICOLOGIA</a></li>
+                <li><a href="audiolibros/psi.html">FACULTAD DE INGENIERIA</a></li>                 
+    </ul>
+
+
+    <section class="botones">
+        <a href="#" class="fa-brands fa-facebook">
+            <h2>Facebook </h2></a>
+        <a href="#" class="fa-brands fa-instagram"><h2>Instagram</h2></a>
+        <a href="#" class="fa-brands fa-tiktok"><h2>TikTok</h2></a>
+        <a href="#" class="fa-brands fa-youtube"><h2>Youtube</h2></a>
+    </section>
+    
+</section>    
+
+
+</body>
+</html>
