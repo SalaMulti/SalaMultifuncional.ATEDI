@@ -8,7 +8,9 @@
     background: url(Imagenes/Fondo2.jpeg) no-repeat;
     background-size: 100% 100%;
     background-position: center center;
+    background-attachment: fixed;
 }
+
 .botones{
     justify-content: space-around;
     align-items: center;
@@ -69,6 +71,15 @@
     z-index: 1000 !important;
 }
 
-@media (max-width: 952px){
-    
+.ubicacion a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    color: #fff;
+    border-bottom: 2px solid gray;
+    margin-top: 10px;
+}
+.ubicacion{
+    margin-bottom: 15px;
 }

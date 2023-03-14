@@ -13,7 +13,7 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
     <script src="https://kit.fontawesome.com/ea4c00813e.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="EstiloSlides.css">
 </head>
 <body>
     <header>
@@ -52,45 +52,94 @@
                     </ul>
                     </li>
                     <li><a href="audiolibros/psi.html">PSICOLOGIA</a></li>
-                    <li><a href="audiolibros/psi.html">INGENIERIA</a></li>
+                    <li><a href="audiolibros/ing.html">INGENIERIA</a></li>
                     
                 </ul>
             </li>
            
-            <li><a href="podcats.html">PODCASTS</a></li>
-            <li><a href="materailadaptado.html">MATERIAL ADAPTADO </a></li>
-            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="https://servcisosialatedi.blogspot.com/2023/03/podcast.html">PODCASTS</a></li>
+            <li><a href="https://servcisosialatedi.blogspot.com/2023/03/material-adaptado.html">MATERIAL ADAPTADO </a></li>
             <li><a href="https://servcisosialatedi.blogspot.com/2023/03/servicio-social.html">SERVICIO SOCIAL</a></li>
+            <li><a href="https://servcisosialatedi.blogspot.com/2023/03/comunidad.html">Comunidad</a></li>           
+            <li><a href="https://servcisosialatedi.blogspot.com/2023/03/contacto.html">CONTACTO</a></li>
     </ul>
 </body>
 <section class="cuerpo">
-    <div class="container">
-        <section id="ubicacion" class="ubicacion">
-            <a href="#ubicacion"><b>Ubicación:</b> </a>
-                <p>La sala multifuncional de ATEDI se encuentra a un costado de la 
-                    Biblioteca central de la Universidad Autónoma 
-                    de Querétaro, en la Calle Hidalgo esquina Av.5 
-                    de Febrero,  en Querétaro, Qro.</p>
-        </section>
-        <section class="mapa1" id='map'  style='width: 100%; height: 400px;'> </section>
+    <div class="slider1">
+        <div class="slider">
+            <div class="slides">
+                <input type= "radio" name="radio-btn" id="radio1">
+                <input type= "radio" name="radio-btn" id="radio2">
+                <input type= "radio" name="radio-btn" id="radio3">
+                <input type= "radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="Imagenes\01DISCAPACIDADES.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\02DEPORTE.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\03LOGO.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="Imagenes\05SECRETARIA.png" alt="">
+                </div>
+            </div>
+           
+            <div class="navegacionauto">
+                <div class="autobtn1"></div>
+                <div class="autobtn2"></div>
+                <div class="autobtn3"></div>
+                <div class="autobtn4"></div>
+            </div>
+            <div class="navegacionmanual">
+                <label for="radio1" class="manualbtn"></label>
+                <label for="radio2" class="manualbtn"></label>
+                <label for="radio3" class="manualbtn"></label>
+                <label for="radio4" class="manualbtn"></label>
+
+            </div>
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            },5000)
+        </script>
+    </div>
+    <section id="ubicacion" class="ubicacion">
+        <a href="#ubicacion"><b>Ubicación:</b> </a>
+            <p> <br> La sala multifuncional de ATEDI se encuentra a un costado de la 
+                Biblioteca central de la Universidad Autónoma 
+                de Querétaro, en la Calle Hidalgo esquina Av.5 
+                de Febrero,  en Querétaro, Qro. <br> </p>
+    </section>       
+     <section class="mapa1" id='map'  style='width: 100%; height: 400px;'> </section>
         <!-- <div class="mapa1" id='map'  style='width: 100%; height: 400px;'></div> -->
         <script src="MapBox.js"></script>
+    <div class="container">
+        
+
+
         <section id="Quees" class="Quees">
             <a href="#Quees"><b>¿Qué es?</b> </a>
-                <p>La sala multifuncional de ATEDI se encuentra a un costado de la 
-                    Biblioteca central de la Universidad Autónoma 
-                    de Querétaro, en la Calle Hidalgo esquina Av.5 
-                    de Febrero,  en Querétaro, Qro.</p>
+                <p> <b> ATEDI:  <br> Atención a Estudiantes con Discapacidad. </b> <br> <br> Nuestra labor es consolidar un modelo educativo incluyente, mediante la elaboración de políticas y el desarrollo de prácticas inclusivas para  superar las barreras de acceso de las personas con discapacidad.</p>
         </section>
         <section id="Paraque" class="Paraque">
             <a href="#Paraque"><b>¿Para qué sirve?</b> </a>
-                <p>La sala multifuncional de ATEDI se encuentra a un costado de la 
-                    Biblioteca central de la Universidad Autónoma 
-                    de Querétaro, en la Calle Hidalgo esquina Av.5 
-                    de Febrero,  en Querétaro, Qro.</p>
+                <p>Sirve para los alumnos con alguna discapacidad que necesiten un espacio de trabajo, equipo de computo, asesorias o material adaptado. Este espacio también es para los prestadores de servicio que necesiten algun lugar para realizar el material adaptado o la cabina de grabación. Igualmente es un espacio creado para brindar atención necesaria a la comunidad interesada en conocer o formar parte de ATEDI.</p>
         </section> 
+        <section id="Historia" class="Historia">
+            <a href="#Historia"><b>Historia</b> </a>
+                <p>Inició en el 2012 con un programa de nombre la UAQ Incluye a Todos. Posterior a ello en el año 2019 cambió el nombre a ATEDI, Atención a Estudiantes con Discapacidad y en el 2021 se convierte en la Coordinación de Atención a Estudiantes con Discapacidad (ATEDI) dirigida por la Lic. Adriana Guillén Velázquez, dicha coordinación perteneciente a la Dirección de Atención a la Comunidad Universitaria (DACU).</p>
+        </section> 
+        
     </div>  
-    
+
         <section class="botones">
             <a href="https://www.facebook.com/atencionaladiscapacidadUAQ/" class="fa-brands fa-facebook"><h2>Facebook </h2></a>
             <a href="https://www.instagram.com/atedi_uaq/" class="fa-brands fa-instagram"><h2>Instagram</h2></a>
